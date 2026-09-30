@@ -1,480 +1,693 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8"/>
-<title>Malik Abdullah — CV</title>
-<style>
-  @page { size: A4; margin: 0; }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  <head>
+    <meta charset="UTF-8" />
+    <title>Malik Abdullah — CV</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 0;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
 
-  :root {
-    --accent: #2563eb;
-    --accent-light: #eff6ff;
-    --accent-border: #bfdbfe;
-    --text: #0f172a;
-    --text2: #475569;
-    --text3: #64748b;
-    --border: #e2e8f0;
-    --chip-bg: #f8fafc;
-  }
+      :root {
+        --accent: #2563eb;
+        --accent-light: #eff6ff;
+        --accent-border: #bfdbfe;
+        --text: #0f172a;
+        --text2: #475569;
+        --text3: #64748b;
+        --border: #e2e8f0;
+        --chip-bg: #f8fafc;
+      }
 
-  html, body {
-    width: 210mm;
-    height: 297mm;
-    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-    font-size: 8pt;
-    line-height: 1.4;
-    color: var(--text);
-    background: #fff;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
+      html,
+      body {
+        width: 210mm;
+        height: 297mm;
+        font-family:
+          "Segoe UI",
+          system-ui,
+          -apple-system,
+          sans-serif;
+        font-size: 8pt;
+        line-height: 1.4;
+        color: var(--text);
+        background: #fff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
 
-  .page {
-    width: 210mm;
-    height: 297mm;
-    padding: 9mm 10mm 7mm 10mm;
-    display: flex;
-    flex-direction: column;
-  }
+      .page {
+        width: 210mm;
+        height: 297mm;
+        padding: 9mm 10mm 7mm 10mm;
+        display: flex;
+        flex-direction: column;
+      }
 
-  /* ── HEADER ── */
-  .header {
-    border-bottom: 2px solid var(--accent);
-    padding-bottom: 7px;
-    margin-bottom: 8px;
-    flex-shrink: 0;
-  }
-  .header-name {
-    font-size: 17pt;
-    font-weight: 800;
-    letter-spacing: -0.3px;
-    color: var(--text);
-    line-height: 1.1;
-  }
-  .header-sub {
-    font-size: 8.5pt;
-    font-weight: 600;
-    color: var(--accent);
-    margin-top: 2px;
-  }
-  .chips {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    margin-top: 6px;
-  }
-  .chip {
-    font-size: 6.8pt;
-    padding: 2px 6px;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    background: var(--chip-bg);
-    color: var(--text2);
-    white-space: nowrap;
-  }
-  .chip a {
-    color: var(--text2);
-    text-decoration: none;
-  }
-  .learning {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-top: 5px;
-    padding: 4px 8px;
-    background: var(--accent-light);
-    border: 1px solid var(--accent-border);
-    border-radius: 5px;
-  }
-  .learning-label {
-    font-size: 6.8pt;
-    font-weight: 700;
-    color: var(--accent);
-  }
-  .learning-sep { width: 1px; height: 10px; background: var(--accent-border); }
-  .badge {
-    font-size: 6.5pt;
-    padding: 2px 6px;
-    border-radius: 3px;
-    background: var(--accent);
-    color: #fff;
-    font-weight: 600;
-  }
-  .badge-outline {
-    font-size: 6.5pt;
-    padding: 2px 6px;
-    border-radius: 3px;
-    border: 1px solid var(--accent);
-    color: var(--accent);
-    font-weight: 500;
-  }
+      /* ── HEADER ── */
+      .header {
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 7px;
+        margin-bottom: 8px;
+        flex-shrink: 0;
+      }
+      .header-name {
+        font-size: 17pt;
+        font-weight: 800;
+        letter-spacing: -0.3px;
+        color: var(--text);
+        line-height: 1.1;
+      }
+      .header-sub {
+        font-size: 8.5pt;
+        font-weight: 600;
+        color: var(--accent);
+        margin-top: 2px;
+      }
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin-top: 6px;
+      }
+      .chip {
+        font-size: 6.8pt;
+        padding: 2px 6px;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        background: var(--chip-bg);
+        color: var(--text2);
+        white-space: nowrap;
+      }
+      .chip a {
+        color: var(--text2);
+        text-decoration: none;
+      }
+      .learning {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-top: 5px;
+        padding: 4px 8px;
+        background: var(--accent-light);
+        border: 1px solid var(--accent-border);
+        border-radius: 5px;
+      }
+      .learning-label {
+        font-size: 6.8pt;
+        font-weight: 700;
+        color: var(--accent);
+      }
+      .learning-sep {
+        width: 1px;
+        height: 10px;
+        background: var(--accent-border);
+      }
+      .badge {
+        font-size: 6.5pt;
+        padding: 2px 6px;
+        border-radius: 3px;
+        background: var(--accent);
+        color: #fff;
+        font-weight: 600;
+      }
+      .badge-outline {
+        font-size: 6.5pt;
+        padding: 2px 6px;
+        border-radius: 3px;
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        font-weight: 500;
+      }
 
-  /* ── BODY GRID ── */
-  .body {
-    display: grid;
-    grid-template-columns: 172px 1fr;
-    gap: 0 14px;
-    flex: 1;
-    min-height: 0;
-    align-items: start;
-  }
-  .sidebar {
-    border-right: 1px solid var(--border);
-    padding-right: 10px;
-  }
+      /* ── BODY GRID ── */
+      .body {
+        display: grid;
+        grid-template-columns: 172px 1fr;
+        gap: 0 14px;
+        flex: 1;
+        min-height: 0;
+        align-items: start;
+      }
+      .sidebar {
+        border-right: 1px solid var(--border);
+        padding-right: 10px;
+      }
 
-  /* ── Section headers ── */
-  .sec {
-    font-size: 7pt;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    color: var(--accent);
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 5px;
-  }
-  .sec::after {
-    content: "";
-    flex: 1;
-    height: 1px;
-    background: var(--border);
-  }
-  .block { margin-bottom: 7px; }
-  .block:last-child { margin-bottom: 0; }
+      /* ── Section headers ── */
+      .sec {
+        font-size: 7pt;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.07em;
+        color: var(--accent);
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        margin-bottom: 5px;
+      }
+      .sec::after {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: var(--border);
+      }
+      .block {
+        margin-bottom: 7px;
+      }
+      .block:last-child {
+        margin-bottom: 0;
+      }
 
-  /* Skills */
-  .skill-cat {
-    font-size: 6.5pt;
-    font-weight: 700;
-    color: var(--text3);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-    margin-bottom: 3px;
-    margin-top: 4px;
-  }
-  .skill-cat:first-child { margin-top: 0; }
-  .tags { display: flex; flex-wrap: wrap; gap: 2px; }
-  .tag {
-    font-size: 6.5pt;
-    padding: 1px 5px;
-    border-radius: 3px;
-    background: #f1f5f9;
-    border: 1px solid var(--border);
-    color: #334155;
-  }
+      /* Skills */
+      .skill-cat {
+        font-size: 6.5pt;
+        font-weight: 700;
+        color: var(--text3);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin-bottom: 3px;
+        margin-top: 4px;
+      }
+      .skill-cat:first-child {
+        margin-top: 0;
+      }
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+      }
+      .tag {
+        font-size: 6.5pt;
+        padding: 1px 5px;
+        border-radius: 3px;
+        background: #f1f5f9;
+        border: 1px solid var(--border);
+        color: #334155;
+      }
 
-  /* Certifications */
-  .cert { margin-bottom: 5px; }
-  .cert-name { font-size: 7.2pt; font-weight: 700; color: var(--text); line-height: 1.25; }
-  .cert-sub { font-size: 6.5pt; color: var(--text3); margin-top: 1px; }
+      /* Certifications */
+      .cert {
+        margin-bottom: 5px;
+      }
+      .cert-name {
+        font-size: 7.2pt;
+        font-weight: 700;
+        color: var(--text);
+        line-height: 1.25;
+      }
+      .cert-sub {
+        font-size: 6.5pt;
+        color: var(--text3);
+        margin-top: 1px;
+      }
 
-  /* Education */
-  .edu { margin-bottom: 6px; }
-  .edu-degree { font-size: 7.2pt; font-weight: 700; color: var(--text); line-height: 1.25; }
-  .edu-school { font-size: 6.5pt; color: var(--text2); margin-top: 1px; }
-  .edu-note {
-    font-size: 6.5pt;
-    color: var(--text3);
-    padding-left: 8px;
-    position: relative;
-    margin-top: 1px;
-  }
-  .edu-note::before { content: "·"; position: absolute; left: 1px; }
+      /* Education */
+      .edu {
+        margin-bottom: 6px;
+      }
+      .edu-degree {
+        font-size: 7.2pt;
+        font-weight: 700;
+        color: var(--text);
+        line-height: 1.25;
+      }
+      .edu-school {
+        font-size: 6.5pt;
+        color: var(--text2);
+        margin-top: 1px;
+      }
+      .edu-note {
+        font-size: 6.5pt;
+        color: var(--text3);
+        padding-left: 8px;
+        position: relative;
+        margin-top: 1px;
+      }
+      .edu-note::before {
+        content: "·";
+        position: absolute;
+        left: 1px;
+      }
 
-  /* Languages */
-  .lang-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 4px;
-    font-size: 7.5pt;
-    font-weight: 600;
-  }
+      /* Languages */
+      .lang-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 4px;
+        font-size: 7.5pt;
+        font-weight: 600;
+      }
 
-  /* Main column */
-  .profile-box {
-    background: var(--accent-light);
-    border-left: 3px solid var(--accent);
-    border-radius: 0 4px 4px 0;
-    padding: 5px 8px;
-    margin-bottom: 2px;
-  }
-  .profile-tag { font-size: 7pt; font-weight: 700; color: #1d4ed8; margin-bottom: 2px; }
-  .profile-text { font-size: 7.2pt; color: var(--text2); line-height: 1.48; text-align: justify; }
+      /* Main column */
+      .profile-box {
+        background: var(--accent-light);
+        border-left: 3px solid var(--accent);
+        border-radius: 0 4px 4px 0;
+        padding: 5px 8px;
+        margin-bottom: 2px;
+      }
+      .profile-tag {
+        font-size: 7pt;
+        font-weight: 700;
+        color: #1d4ed8;
+        margin-bottom: 2px;
+      }
+      .profile-text {
+        font-size: 7.2pt;
+        color: var(--text2);
+        line-height: 1.48;
+        text-align: justify;
+      }
 
-  /* Experience */
-  .exp { margin-bottom: 5px; }
-  .exp-role { font-size: 8pt; font-weight: 700; color: var(--text); }
-  .exp-meta { font-size: 6.8pt; color: var(--text3); margin: 1px 0 3px; }
-  .exp-meta strong { color: var(--text2); font-weight: 600; }
-  .bullets { list-style: none; }
-  .bullets li {
-    font-size: 7pt;
-    color: var(--text2);
-    line-height: 1.38;
-    padding-left: 9px;
-    position: relative;
-    margin-bottom: 1px;
-    text-align: justify;
-  }
-  .bullets li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 5px;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: var(--accent);
-  }
+      /* Experience */
+      .exp {
+        margin-bottom: 5px;
+      }
+      .exp-role {
+        font-size: 8pt;
+        font-weight: 700;
+        color: var(--text);
+      }
+      .exp-meta {
+        font-size: 6.8pt;
+        color: var(--text3);
+        margin: 1px 0 3px;
+      }
+      .exp-meta strong {
+        color: var(--text2);
+        font-weight: 600;
+      }
+      .bullets {
+        list-style: none;
+      }
+      .bullets li {
+        font-size: 7pt;
+        color: var(--text2);
+        line-height: 1.38;
+        padding-left: 9px;
+        position: relative;
+        margin-bottom: 1px;
+        text-align: justify;
+      }
+      .bullets li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
 
-  /* Projects */
-  .project {
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    background: #fafafa;
-    padding: 4px 6px;
-    margin-bottom: 4px;
-  }
-  .project:last-child { margin-bottom: 0; }
-  .project-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 6px;
-    margin-bottom: 1px;
-  }
-  .project-name { font-size: 7.6pt; font-weight: 700; color: var(--text); }
-  .project-desc { font-size: 6.8pt; color: var(--text2); line-height: 1.35; margin-bottom: 2px; text-align: justify; }
+      /* Projects */
+      .project {
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        background: #fafafa;
+        padding: 4px 6px;
+        margin-bottom: 4px;
+      }
+      .project:last-child {
+        margin-bottom: 0;
+      }
+      .project-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 6px;
+        margin-bottom: 1px;
+      }
+      .project-name {
+        font-size: 7.6pt;
+        font-weight: 700;
+        color: var(--text);
+      }
+      .project-desc {
+        font-size: 6.8pt;
+        color: var(--text2);
+        line-height: 1.35;
+        margin-bottom: 2px;
+        text-align: justify;
+      }
 
-  /* Mindset */
-  .mindset li {
-    font-size: 7pt;
-    color: var(--text2);
-    line-height: 1.38;
-    padding-left: 9px;
-    position: relative;
-    margin-bottom: 1px;
-    list-style: none;
-    text-align: justify;
-  }
-  .mindset li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 5px;
-    width: 3px;
-    height: 3px;
-    border-radius: 50%;
-    background: var(--accent);
-  }
+      /* Mindset */
+      .mindset li {
+        font-size: 7pt;
+        color: var(--text2);
+        line-height: 1.38;
+        padding-left: 9px;
+        position: relative;
+        margin-bottom: 1px;
+        list-style: none;
+        text-align: justify;
+      }
+      .mindset li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background: var(--accent);
+      }
 
-  a { color: inherit; }
+      a {
+        color: inherit;
+      }
 
-  @media print {
-    html, body, .page {
-      width: 210mm;
-      height: 297mm;
-    }
-    .page {
-      padding: 9mm 10mm 7mm 10mm;
-      page-break-after: avoid;
-      page-break-inside: avoid;
-    }
-  }
-</style>
-</head>
-<body>
-<div class="page">
+      @media print {
+        html,
+        body,
+        .page {
+          width: 210mm;
+          height: 297mm;
+        }
+        .page {
+          padding: 9mm 10mm 7mm 10mm;
+          page-break-after: avoid;
+          page-break-inside: avoid;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header-name">Malik Abdullah</div>
+        <div class="header-sub">
+          Full-Stack Developer · CS Student · Problem Solver
+        </div>
+        <div class="chips">
+          <span class="chip">Karachi, Pakistan</span>
+          <span class="chip">03112906871</span>
+          <span class="chip"
+            ><a href="mailto:abdullahkaleem2004@gmail.com"
+              >abdullahkaleem2004@gmail.com</a
+            ></span
+          >
+          <span class="chip"
+            ><a href="https://github.com/Malik-Abdullah12"
+              >github.com/Malik-Abdullah12</a
+            ></span
+          >
+          <span class="chip"
+            ><a href="https://linkedin.com/in/abdullah-malik-8584b831a"
+              >linkedin.com/in/abdullah-malik-8584b831a</a
+            ></span
+          >
+        </div>
+        <div class="learning">
+          <span class="learning-label">Currently Learning</span>
+          <span class="learning-sep"></span>
+          <span class="badge">React</span>
+          <span class="badge">Django (Advanced)</span>
+          <span class="badge-outline">Next.js (Upcoming)</span>
+        </div>
+      </header>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header-name">Malik Abdullah</div>
-    <div class="header-sub">Full-Stack Developer · CS Student · Problem Solver</div>
-    <div class="chips">
-      <span class="chip">Karachi, Pakistan</span>
-      <span class="chip">03112906871</span>
-      <span class="chip"><a href="mailto:abdullahkaleem2004@gmail.com">abdullahkaleem2004@gmail.com</a></span>
-      <span class="chip"><a href="https://github.com/Malik-Abdullah12">github.com/Malik-Abdullah12</a></span>
-      <span class="chip"><a href="https://linkedin.com/in/abdullah-malik-8584b831a">linkedin.com/in/abdullah-malik-8584b831a</a></span>
+      <!-- BODY -->
+      <div class="body">
+        <!-- LEFT -->
+        <aside class="sidebar">
+          <div class="block">
+            <div class="sec">Skills</div>
+            <div class="skill-cat">Languages</div>
+            <div class="tags">
+              <span class="tag">Python</span><span class="tag">JavaScript</span>
+              <span class="tag">C++</span><span class="tag">HTML</span
+              ><span class="tag">CSS</span>
+            </div>
+            <div class="skill-cat">Backend</div>
+            <div class="tags">
+              <span class="tag">Django</span
+              ><span class="tag">REST Framework</span>
+              <span class="tag">WebSocket</span><span class="tag">Redis</span>
+            </div>
+            <div class="skill-cat">Frontend</div>
+            <div class="tags">
+              <span class="tag">Vanilla JS</span><span class="tag">React</span>
+              <span class="tag">DOM Manipulation</span
+              ><span class="tag">Responsive Design</span>
+            </div>
+            <div class="skill-cat">Tools & Concepts</div>
+            <div class="tags">
+              <span class="tag">Git / GitHub</span><span class="tag">OOP</span>
+              <span class="tag">Local Storage</span><span class="tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="sec">Certifications</div>
+            <div class="cert">
+              <div class="cert-name">Network Technician Career Path</div>
+              <div class="cert-sub">Cisco Networking Academy</div>
+              <span class="badge" style="margin-top: 2px; display: inline-block"
+                >Verified · Intermediate</span
+              >
+            </div>
+            <div class="cert">
+              <div class="cert-name">Industrial Networking Essentials</div>
+              <div class="cert-sub">Cisco Networking Academy</div>
+              <span class="badge" style="margin-top: 2px; display: inline-block"
+                >Verified</span
+              >
+            </div>
+            <div class="cert">
+              <div class="cert-name">CS403: Modern Database Systems</div>
+              <div class="cert-sub">June 2026 · 29 hrs</div>
+              <span class="badge" style="margin-top: 2px; display: inline-block"
+                >92% Score</span
+              >
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="sec">Education</div>
+            <div class="edu">
+              <div class="edu-degree">
+                BS Computer Science (5th Semester · Ongoing)
+              </div>
+              <div class="edu-school">MAJU, Karachi</div>
+              <div class="edu-note">Strong GPA · OOP & C++ focus</div>
+              <div class="edu-note">
+                Data Structures, Algorithms, System Design
+              </div>
+            </div>
+            <div class="edu">
+              <div class="edu-degree">Intermediate FSc — CS</div>
+              <div class="edu-school">Fazaia Inter College · 2023</div>
+              <div class="edu-note">Excellent technical performance</div>
+            </div>
+            <div class="edu">
+              <div class="edu-degree">SSC (Matric)</div>
+              <div class="edu-school">Nasra Public School · 2021</div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="sec">Languages</div>
+            <div class="lang-row">
+              <span>Urdu</span><span class="badge">Native</span>
+            </div>
+            <div class="lang-row">
+              <span>English</span
+              ><span class="badge-outline">Intermediate</span>
+            </div>
+          </div>
+        </aside>
+
+        <!-- RIGHT -->
+        <main class="main">
+          <div class="block">
+            <div class="sec">Professional Profile</div>
+            <div class="profile-box">
+              <div class="profile-tag">
+                Entry-to-Intermediate · Actively Growing
+              </div>
+              <p class="profile-text">
+                Full-stack developer building real, deployed applications while
+                pursuing a BS in Computer Science. I write clean code across
+                Python/Django backends and JavaScript/React frontends. Currently
+                expanding into React and advanced Django. Open to internships
+                and junior roles.
+              </p>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="sec">Experience</div>
+            <div class="exp">
+              <div class="exp-role">Software Development Intern</div>
+              <div class="exp-meta">
+                <strong>Software House</strong> · 6 Months · Remote
+              </div>
+              <ul class="bullets">
+                <li>
+                  Implemented OpenCV-based color detection and object tracking
+                  algorithms.
+                </li>
+                <li>
+                  Shipped features on live production projects alongside senior
+                  developers.
+                </li>
+                <li>
+                  Deepened Python proficiency and professional development
+                  practices.
+                </li>
+              </ul>
+            </div>
+            <div class="exp">
+              <div class="exp-role">Operations & Analytics Lead</div>
+              <div class="exp-meta">
+                <strong>London Go Cabs Provider</strong> · 1 Year · Karachi
+              </div>
+              <ul class="bullets">
+                <li>
+                  Managed sales operations with metrics tracking and performance
+                  monitoring.
+                </li>
+                <li>
+                  Achieved consistent revenue targets and improved operational
+                  efficiency.
+                </li>
+              </ul>
+            </div>
+            <div class="exp">
+              <div class="exp-role">Business Developer</div>
+              <div class="exp-meta">
+                <strong>Apptify Solution</strong> · 1 Year · Remote
+              </div>
+              <ul class="bullets">
+                <li>
+                  Managed and optimized Upwork profiles to maintain a
+                  professional presence and attract relevant opportunities.
+                </li>
+                <li>
+                  Handled Upwork bidding by identifying suitable projects and
+                  submitting tailored proposals.
+                </li>
+                <li>
+                  Managed client communication, project inquiries, and initial
+                  requirements to support business development.
+                </li>
+                <li>
+                  Researched freelance opportunities and contributed to lead
+                  generation and client acquisition.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="sec">Projects</div>
+
+            <div class="project">
+              <div class="project-head">
+                <span class="project-name">Real-time Chat Application</span>
+              </div>
+              <p class="project-desc">
+                Messaging platform with WebSocket + Redis delivery, SQLite
+                persistence, live user presence, and responsive frontend.
+              </p>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">Django</span
+                ><span class="tag">WebSocket</span><span class="tag">Redis</span
+                ><span class="tag">SQLite</span
+                ><span class="tag">JavaScript</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-head">
+                <span class="project-name">E-Commerce Cart Application</span>
+              </div>
+              <p class="project-desc">
+                Shopping cart with add/remove, quantity controls, price
+                calculation, and LocalStorage persistence.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span
+                ><span class="tag">JavaScript</span
+                ><span class="tag">LocalStorage</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-head">
+                <span class="project-name">Demo Skin Product App</span>
+              </div>
+              <p class="project-desc">
+                React skincare showcase with product listings, pricing, and
+                responsive mobile-first layout.
+              </p>
+              <div class="tags">
+                <span class="tag">React</span><span class="tag">CSS</span
+                ><span class="tag">Responsive Design</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-head">
+                <span class="project-name">Netflix Homepage Clone</span>
+              </div>
+              <p class="project-desc">
+                Pixel-accurate Netflix landing page with flexbox, positioning,
+                and responsive breakpoints.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-head">
+                <span class="project-name">To-Do List Application</span>
+              </div>
+              <p class="project-desc">
+                Task manager with add, delete, and mark-complete — vanilla JS,
+                zero dependencies.
+              </p>
+              <div class="tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span
+                ><span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="sec">Mindset & Growth</div>
+            <ul class="mindset">
+              <li>
+                Self-taught full-stack developer through deliberate, shipped
+                projects
+              </li>
+              <li>Clean, maintainable code is non-negotiable — not optional</li>
+              <li>
+                Actively studying system design, scalable architecture, and
+                modern frameworks
+              </li>
+              <li>
+                Passionate about building products that actually work in the
+                real world
+              </li>
+            </ul>
+          </div>
+        </main>
+      </div>
     </div>
-    <div class="learning">
-      <span class="learning-label">Currently Learning</span>
-      <span class="learning-sep"></span>
-      <span class="badge">React</span>
-      <span class="badge">Django (Advanced)</span>
-      <span class="badge-outline">Next.js (Upcoming)</span>
-    </div>
-  </header>
-
-  <!-- BODY -->
-  <div class="body">
-
-    <!-- LEFT -->
-    <aside class="sidebar">
-
-      <div class="block">
-        <div class="sec">Skills</div>
-        <div class="skill-cat">Languages</div>
-        <div class="tags">
-          <span class="tag">Python</span><span class="tag">JavaScript</span>
-          <span class="tag">C++</span><span class="tag">HTML</span><span class="tag">CSS</span>
-        </div>
-        <div class="skill-cat">Backend</div>
-        <div class="tags">
-          <span class="tag">Django</span><span class="tag">REST Framework</span>
-          <span class="tag">WebSocket</span><span class="tag">Redis</span>
-        </div>
-        <div class="skill-cat">Frontend</div>
-        <div class="tags">
-          <span class="tag">Vanilla JS</span><span class="tag">React</span>
-          <span class="tag">DOM Manipulation</span><span class="tag">Responsive Design</span>
-        </div>
-        <div class="skill-cat">Tools & Concepts</div>
-        <div class="tags">
-          <span class="tag">Git / GitHub</span><span class="tag">OOP</span>
-          <span class="tag">Local Storage</span><span class="tag">SQL</span>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="sec">Certifications</div>
-        <div class="cert">
-          <div class="cert-name">Network Technician Career Path</div>
-          <div class="cert-sub">Cisco Networking Academy</div>
-          <span class="badge" style="margin-top:2px;display:inline-block;">Verified · Intermediate</span>
-        </div>
-        <div class="cert">
-          <div class="cert-name">Industrial Networking Essentials</div>
-          <div class="cert-sub">Cisco Networking Academy</div>
-          <span class="badge" style="margin-top:2px;display:inline-block;">Verified</span>
-        </div>
-        <div class="cert">
-          <div class="cert-name">CS403: Modern Database Systems</div>
-          <div class="cert-sub">June 2026 · 29 hrs</div>
-          <span class="badge" style="margin-top:2px;display:inline-block;">92% Score</span>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="sec">Education</div>
-        <div class="edu">
-          <div class="edu-degree">BS Computer Science (4th Semester · Ongoing)</div>
-          <div class="edu-school">MAJU, Karachi</div>
-          <div class="edu-note">Strong GPA · OOP & C++ focus</div>
-          <div class="edu-note">Data Structures, Algorithms, System Design</div>
-        </div>
-        <div class="edu">
-          <div class="edu-degree">Intermediate FSc — CS</div>
-          <div class="edu-school">Fazaia Inter College · 2023</div>
-          <div class="edu-note">Excellent technical performance</div>
-        </div>
-        <div class="edu">
-          <div class="edu-degree">SSC (Matric)</div>
-          <div class="edu-school">Nasra Public School · 2021</div>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="sec">Languages</div>
-        <div class="lang-row"><span>Urdu</span><span class="badge">Native</span></div>
-        <div class="lang-row"><span>English</span><span class="badge-outline">Intermediate</span></div>
-      </div>
-
-    </aside>
-
-    <!-- RIGHT -->
-    <main class="main">
-
-      <div class="block">
-        <div class="sec">Professional Profile</div>
-        <div class="profile-box">
-          <div class="profile-tag">Entry-to-Intermediate · Actively Growing</div>
-          <p class="profile-text">Full-stack developer building real, deployed applications while pursuing a BS in Computer Science. I write clean code across Python/Django backends and JavaScript/React frontends. Currently expanding into React and advanced Django. Open to internships and junior roles.</p>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="sec">Experience</div>
-        <div class="exp">
-          <div class="exp-role">Software Development Intern</div>
-          <div class="exp-meta"><strong>Software House</strong> · 6 Months · Remote</div>
-          <ul class="bullets">
-            <li>Implemented OpenCV-based color detection and object tracking algorithms.</li>
-            <li>Shipped features on live production projects alongside senior developers.</li>
-            <li>Deepened Python proficiency and professional development practices.</li>
-          </ul>
-        </div>
-        <div class="exp">
-          <div class="exp-role">Operations & Analytics Lead</div>
-          <div class="exp-meta"><strong>London Go Cabs Provider</strong> · 1 Year · Karachi</div>
-          <ul class="bullets">
-            <li>Managed sales operations with metrics tracking and performance monitoring.</li>
-            <li>Achieved consistent revenue targets and improved operational efficiency.</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="sec">Projects</div>
-
-        <div class="project">
-          <div class="project-head">
-            <span class="project-name">Real-time Chat Application</span>
-          </div>
-          <p class="project-desc">Messaging platform with WebSocket + Redis delivery, SQLite persistence, live user presence, and responsive frontend.</p>
-          <div class="tags"><span class="tag">Python</span><span class="tag">Django</span><span class="tag">WebSocket</span><span class="tag">Redis</span><span class="tag">SQLite</span><span class="tag">JavaScript</span></div>
-        </div>
-
-        <div class="project">
-          <div class="project-head">
-            <span class="project-name">E-Commerce Cart Application</span>
-          </div>
-          <p class="project-desc">Shopping cart with add/remove, quantity controls, price calculation, and LocalStorage persistence.</p>
-          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">LocalStorage</span></div>
-        </div>
-
-        <div class="project">
-          <div class="project-head">
-            <span class="project-name">Demo Skin Product App</span>
-          </div>
-          <p class="project-desc">React skincare showcase with product listings, pricing, and responsive mobile-first layout.</p>
-          <div class="tags"><span class="tag">React</span><span class="tag">CSS</span><span class="tag">Responsive Design</span></div>
-        </div>
-
-        <div class="project">
-          <div class="project-head">
-            <span class="project-name">Netflix Homepage Clone</span>
-          </div>
-          <p class="project-desc">Pixel-accurate Netflix landing page with flexbox, positioning, and responsive breakpoints.</p>
-          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span></div>
-        </div>
-
-        <div class="project">
-          <div class="project-head">
-            <span class="project-name">To-Do List Application</span>
-          </div>
-          <p class="project-desc">Task manager with add, delete, and mark-complete — vanilla JS, zero dependencies.</p>
-          <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="sec">Mindset & Growth</div>
-        <ul class="mindset">
-          <li>Self-taught full-stack developer through deliberate, shipped projects</li>
-          <li>Clean, maintainable code is non-negotiable — not optional</li>
-          <li>Actively studying system design, scalable architecture, and modern frameworks</li>
-          <li>Passionate about building products that actually work in the real world</li>
-        </ul>
-      </div>
-
-    </main>
-  </div>
-</div>
-</body>
+  </body>
 </html>
